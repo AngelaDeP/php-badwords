@@ -3,6 +3,11 @@
 $paragrafo = 'Ecco il mio primo paragrafo tramite PHP';
 $lunghezzaParagrafo = strlen($paragrafo);
 
+$simboliCensura = "***";
+$parolaCensurata = $_GET['censura'];
+
+$censuraParagrafo = str_replace($parolaCensurata, $simboliCensura, $paragrafo);
+
 ?>
 
 <!DOCTYPE html>
@@ -17,5 +22,6 @@ $lunghezzaParagrafo = strlen($paragrafo);
     <h1>PARAGRAFO</h1>
     <p><?php echo $paragrafo ?></p>
     <h4>La lunghezza di questo paragrafo è di <?php echo $lunghezzaParagrafo ?></h4>
+    <h2><?php echo($censuraParagrafo)?> </h2>
 </body>
 </html>
