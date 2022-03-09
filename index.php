@@ -1,6 +1,7 @@
 <?php
 
 $paragrafo = 'Ecco il mio primo paragrafo tramite PHP';
+$lunghezzaParagrafo = strlen($paragrafo);
 
 ?>
 
@@ -15,5 +16,6 @@ $paragrafo = 'Ecco il mio primo paragrafo tramite PHP';
 <body>
     <h1>PARAGRAFO</h1>
     <p><?php echo $paragrafo ?></p>
+    <h4>La lunghezza di questo paragrafo è di <?php echo $lunghezzaParagrafo ?></h4>
 </body>
 </html>
